@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
         <title>
-            insert tab title
+            Flareon Support Page
         </title>
+        <style>
+            #header {
+                display:block;
+                z-index:10;
+                width:100%;
+                height:100px;
+                background-color:red;
+            }
+            main {
+                display:flex;
+                flex-direction:row;
+            }
+
+            @media (max-width: 480px) {
+                main {
+                    display:flex;
+                    flex-direction:column;
+                }
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <p class = "title">title</p>
+        <header id="header">
+            <h1 class = "title">Support a local Flareon hatchery today!</h1>
+            <img src="#" alt="banner" id="header-img">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#sign-up">Sign Up</a>
+                <a class="nav-link" href="#vid-test">Hatchery Virtual Tour</a>
+                <a class="nav-link" href="#testimony">Testimony</a>
+            </nav>
         </header>
         <main>
-            <article class = "item" id = "brush">
-                <p class = "title">Brushes</p>
-                <figure>
-                    <img src ="./Resources/hacksaw.jpeg" alt="an assortment of brushes">
-                </figure>
-                <figcaption>Hacksaw Brushes</figcaption>
-                <p class="description">Made of the highest quality oak. Hacksaw brushes are known for their weight and ability to hold paint in large amounts. Available in different sizes. <span class ="pricing">Starting at $3.00/brush.</span></p>
-                
+            <article id = "sign-up">
+                <p>Brushes</p>
+                <form id="form" action = "https://www.freecodecamp.com/email-submit" method = "POST">
+                    <label for="email">Please enter your email here</label>
+                    <input type="email" id="email" name="email" placeholder="johncena@invisible.com">
+                    <br>
+                    <input type="submit" id="submit">
+                </form>
+            </article>
+            <article id = "vid-test">
+                <p>Brushes</p>
+                <iframe width="534" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </video>
+            </article>
+            <article id = "testimony">
+                <p>Brushes</p>
+
             </article>
         </main>
         
 
-        <nav>
 
-        </nav>
         <footer>
-            <p>footer</p>
+
         </footer>
     </body>
 </html>
