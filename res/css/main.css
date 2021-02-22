@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap');
+/*==========mobile first==============*/
+/*===========default==================
+logo---shop name(header)-----------------
+-------------nav(header)---------------
+---------------(main)-----------------
+---------new releases(article)-----------
+-----------videos(article)--------------
+--------------------------------
+------------testimonials(article)--------
+-------------email(form)--------------
+-------------item------------
+------------item-------------
+-------------item(form end)------------
+---------footer--------------
+===================================*/
+
+*,*::before {
+    box-sizing:border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+}
+/*add color scheme (pinkish overall)*/
+:root {
+
+}
+
+header {
+    width:100%;
+    height:5rem;
+}
+/*faded background of bakery/cupcake, non-obtrusive*/
+header::before {
+    position:absolute;
+    z-index:-1;
+    height:100%;
+    width:100%;
+    background-image:url();
+    background-size:cover;
+    filter:opacity(70%);
+}
+/*emboss? settle on proper style*/
+#shop_name {
+    font-family: 'Dancing Script', cursive;
+    font-size:3rem;
+    
+}
+
+nav {
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+main {
+
+}
+
+footer {
+    
+}
+
+
+
+
+
+
+
+
+
