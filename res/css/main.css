@@ -33,13 +33,13 @@ header {
     height:5rem;
 }
 /*faded background of bakery/cupcake, non-obtrusive*/
-header::before {
+#header-img {
+    display:block;
     position:absolute;
     z-index:-1;
     height:100%;
     width:100%;
-    background-image:url();
-    background-size:cover;
+
     filter:opacity(70%);
 }
 /*emboss? settle on proper style*/

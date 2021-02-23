@@ -1,0 +1,9 @@
+v 0.1 
+  Basic HTML DOM tree
+  rough CSS
+
+V 0.2
+  Polished HTML DOM tree
+  Added placeholder txt
+  Added video embed
+  To do: color scheme & images

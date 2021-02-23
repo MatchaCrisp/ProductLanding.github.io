@@ -4,18 +4,97 @@
         <title>
             Sweeties
         </title>
-
+        <link rel="stylesheet" type="text/css" href="res/css/main.css">
     </head>
     <body>
         <header id="header">
-            <h1 class = "title">Sweeties</h1>
+            <div id="banner">
+                <h1 id="shop_name">Sweeties</h1>
+                <img id="header-img" alt="banner background image" src="#">
+            </div>
 
             <nav id="nav-bar">
-
+                <a class="nav-link" href="#new_release">HOT new releases!</a>
+                <a class="nav-link" href="#testimonial">Customer Testimonials</a>
+                <a class="nav-link" href="#product1">All Products</a>
             </nav>
         </header>
+        
         <main>
+            <article id="new_release">
+                <div id="newProd1">
+                    <img id="prod1img" src="#" alt="sample cupcake red velvet">
+                    <p>Velvet Thunder</p>
+                    <p class="new_long_desc"></p>
+                </div>
+                <div id="newProd2">
+                    <img id="prod2img" src="#" alt="sample cupcake coffee">
+                    <p>Espresso Expresso</p>
+                    <p class="new_long_desc"></p>
+                </div>
+                <div id="newProd3">
+                    <img id="prod3img" src="#" alt="sample cupcake chocolate-cheese">
+                    <p>Mascopone Dream</p>
+                    <p class="new_long_desc"></p>
+                </div>
+            </article>
 
+            <article id="testimonial">
+                <section id="text_testimonial">
+                    <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <section id="text_testimonial">
+                    <div id="txt_test1">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <p class="signature">
+                            John Smith
+                        </p>
+                    </div>
+                    <div id="txt_test2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <p class="signature">
+                            John Smith                            
+                        </p>
+                    </div>
+                    <div id="txt_test3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <p class="signature">
+                            John Smith
+                        </p>
+                    </div>
+                </section>
+            </article>
+
+            <article id="order_form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <div id="product1">
+                        <img id="prod1img" src="#" alt="sample cupcake red velvet">
+                    </div>
+                    <div id="product2">
+                        <img id="prod2img" src="#" alt="sample cake yule log">
+                    </div>
+                    <div id="product3">
+                        <img id="prod3img" src="#" alt="sample chocolate truffle">
+                    </div>
+                    <button type="submit" id="submit">Place Order</button>
+                </form>
+            </article>
         </main>
         
 
