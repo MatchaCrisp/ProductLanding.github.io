@@ -17,43 +17,104 @@ logo---shop name(header)-----------------
 
 *,*::before {
     box-sizing:border-box;
+
+    margin:0;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
     font-size:16px;
+
 }
 /*add color scheme (pinkish overall)*/
 :root {
+    --col-1:#FFFFFF;
+    --col-2:#ffefef;
+    --col-3:#ffbebe;
+    --col-4:#b38585;
+    --col-5:#beffbe;
+    --col-6:#85b385;
+    --col-7:darkgray;
+    --col-8:#000000;
 
 }
 
+body {
+
+}
 header {
+    position:relative;
     width:100%;
-    height:5rem;
+    height:10rem;
+    border:red 2px solid;
+
+}
+#banner {
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    height:10rem;
+    overflow:hidden;
+
+    top:0;
+    left:0;
+
 }
 /*faded background of bakery/cupcake, non-obtrusive*/
 #header-img {
-    display:block;
-    position:absolute;
-    z-index:-1;
-    height:100%;
-    width:100%;
+    filter:opacity(50%);
 
-    filter:opacity(70%);
 }
 /*emboss? settle on proper style*/
 #shop_name {
+    position:relative;
+    top:0.5rem;
+    text-align:center;
     font-family: 'Dancing Script', cursive;
-    font-size:3rem;
+    font-size:4rem;
     
 }
 
 nav {
+    position:relative;
+    top:1rem;
+    height:4rem;
+    text-align:center;
     display:flex;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
+    justify-content: space-evenly;
+}
+nav a {
+    display:block;
+    height:100%;
+    text-decoration:none;
+    color:var(--col-8);
+}
+nav a:hover {
+    color:var(--col-7);
 }
 
+nav a:active {
+    color:var(--col-1);
+}
+
+#new_release {
+    margin-top:2rem;
+    overflow:hidden;
+}
+.product {
+    background-color:var(--col-2);
+    width:300px;
+    height:350px;
+    border:var(--col-7) 1px solid;
+    border-radius:8px;
+}
+.prodImg {
+    margin:15px;
+}
+.product figcaption {
+    text-align:center;
+}
 main {
 
 }

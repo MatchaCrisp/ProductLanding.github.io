@@ -8,9 +8,9 @@
     </head>
     <body>
         <header id="header">
+            <h1 id="shop_name">Sweeties</h1>
             <div id="banner">
-                <h1 id="shop_name">Sweeties</h1>
-                <img id="header-img" alt="banner background image" src="#">
+                <img id="header-img" alt="banner background image" src="./res/img/banner.jpg">
             </div>
 
             <nav id="nav-bar">
@@ -22,21 +22,21 @@
         
         <main>
             <article id="new_release">
-                <div id="newProd1">
-                    <img id="prod1img" src="#" alt="sample cupcake red velvet">
-                    <p>Velvet Thunder</p>
+                <figure class = "product" id="newProd1">
+                    <img class= "prodImg" id="prod1img" src="./res/img/prodPlacehold.png" alt="sample cupcake red velvet">
+                    <figcaption>Velvet Thunder</figcaption>
                     <p class="new_long_desc"></p>
-                </div>
-                <div id="newProd2">
-                    <img id="prod2img" src="#" alt="sample cupcake coffee">
-                    <p>Espresso Expresso</p>
+                </figure>
+                <figure class = "product" id="newProd2">
+                    <img class= "prodImg" id="prod2img" src="./res/img/prodPlacehold.png" alt="sample cupcake coffee">
+                    <figcaption>Espresso Expresso</figcaption>
                     <p class="new_long_desc"></p>
-                </div>
-                <div id="newProd3">
-                    <img id="prod3img" src="#" alt="sample cupcake chocolate-cheese">
-                    <p>Mascopone Dream</p>
+                </figure>
+                <figure class = "product" id="newProd3">
+                    <img class= "prodImg" id="prod3img" src="./res/img/prodPlacehold.png" alt="sample cupcake chocolate-cheese">
+                    <figcaption>Mascopone Dream</figcaption>
                     <p class="new_long_desc"></p>
-                </div>
+                </figure>
             </article>
 
             <article id="testimonial">
@@ -83,15 +83,15 @@
             <article id="order_form">
                 <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
                     <input type="email" id="email" placeholder="Enter your email address" required>
-                    <div id="product1">
-                        <img id="prod1img" src="#" alt="sample cupcake red velvet">
-                    </div>
-                    <div id="product2">
-                        <img id="prod2img" src="#" alt="sample cake yule log">
-                    </div>
-                    <div id="product3">
-                        <img id="prod3img" src="#" alt="sample chocolate truffle">
-                    </div>
+                    <figure class = "product" id="prod1">
+                        <img class= "prodImg" id="prod1img" src="./res/img/prodPlacehold.png" alt="sample cupcake red velvet">
+                    </figure>
+                    <figure class = "product" id="prod2">
+                        <img class= "prodImg" id="prod2img" src="./res/img/prodPlacehold.png" alt="sample cake yule log">
+                    </figure>
+                    <figure class = "product" id="prod3">
+                        <img class= "prodImg" id="prod3img" src="./res/img/prodPlacehold.png" alt="sample chocolate truffle">
+                    </figure>
                     <button type="submit" id="submit">Place Order</button>
                 </form>
             </article>
