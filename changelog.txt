@@ -7,3 +7,9 @@ V 0.2
   Added placeholder txt
   Added video embed
   To do: color scheme & images
+
+v0.3
+  added color scheme
+  added placeholder item images
+  finished (mobile) header, new items, testimonials
+  to do: form, footer

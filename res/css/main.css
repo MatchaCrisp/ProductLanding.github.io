@@ -14,7 +14,7 @@ logo---shop name(header)-----------------
 -------------item(form end)------------
 ---------footer--------------
 ===================================*/
-
+/*==================globals===================*/
 *,*::before {
     box-sizing:border-box;
 
@@ -24,31 +24,58 @@ logo---shop name(header)-----------------
 html {
     font-family: 'Roboto', sans-serif;
     font-size:16px;
+    color:var(--col-5);
 
 }
-/*add color scheme (pinkish overall)*/
+body {
+    background-color:var(--col-4);
+}
+main {
+
+}
+
+
+/*=====================================*/
+/*=====================================*/
+/*1 white, 2 main, 3 accent, 4 lightgray, 5 darkgray, 6 black*/
 :root {
     --col-1:#FFFFFF;
-    --col-2:#ffefef;
-    --col-3:#ffbebe;
-    --col-4:#b38585;
-    --col-5:#beffbe;
-    --col-6:#85b385;
-    --col-7:darkgray;
-    --col-8:#000000;
+    --col-2:#fffbef;
+    --col-3:#cfc1ff;
+    --col-4:#fbfaf9;
+    --col-5:#555554;
+    --col-6:#000000;
+    --col-7:#ffefef;
+    --col-8:#ffbebe;
+    --col-9:#9187b3;
+
 
 }
 
-body {
-
+.bgcol_main {
+    background-color:var(--col-2);
 }
+
+.bgcol_acc {
+    background-color:var(--col-3);
+}
+.txtcol_acc {
+    color:var(--col-3);
+}
+.txtcol_dark_acc {
+    color:var(--col-9);
+}
+/*=====================================*/
+/*=================header====================*/
+
 header {
     position:relative;
     width:100%;
     height:10rem;
-    border:red 2px solid;
+
 
 }
+/*-------------banner---------------*/
 #banner {
     position:absolute;
     z-index:-1;
@@ -60,12 +87,12 @@ header {
     left:0;
 
 }
-/*faded background of bakery/cupcake, non-obtrusive*/
+
 #header-img {
     filter:opacity(50%);
 
 }
-/*emboss? settle on proper style*/
+
 #shop_name {
     position:relative;
     top:0.5rem;
@@ -74,7 +101,9 @@ header {
     font-size:4rem;
     
 }
+/*---------------------------*/
 
+/*-------------nav---------------*/
 nav {
     position:relative;
     top:1rem;
@@ -88,40 +117,248 @@ nav a {
     display:block;
     height:100%;
     text-decoration:none;
-    color:var(--col-8);
+
 }
 nav a:hover {
-    color:var(--col-7);
+    color:var(--col-3);
 }
 
 nav a:active {
-    color:var(--col-1);
+    color:var(--col-8);
 }
-
+/*----------------------------*/
+/*=====================================*/
+/*===================new release==================*/
 #new_release {
-    margin-top:2rem;
+    position:relative;
+    margin:2rem auto 0 auto;
     overflow:hidden;
+    width:400px;
+    height:370px;
 }
-.product {
-    background-color:var(--col-2);
-    width:300px;
-    height:350px;
-    border:var(--col-7) 1px solid;
-    border-radius:8px;
+#new_prod1 {
+    position:absolute;
+
+    animation-name:carousel;
+    animation-duration:18s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    animation-delay:0;
+    animation-timing-function: linear;
 }
-.prodImg {
-    margin:15px;
+#new_prod2 {
+    position:absolute;
+
+    animation-name:carousel;
+    animation-duration:18s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    animation-delay:-12s;
+    animation-timing-function: linear;
 }
-.product figcaption {
+#new_prod3 {
+    position:absolute;
+
+    animation-name:carousel;
+    animation-duration:18s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    animation-delay:-6s;
+    animation-timing-function: linear;
+}
+@keyframes carousel {
+    0% {
+        filter:brightness(100%) opacity(100%);
+        top:5px;
+        left:50px;
+        z-index:2;
+    }
+    27% {
+        filter:brightness(100%) opacity(100%);
+        top:5px;
+        left:50px;
+        z-index:2;
+    }
+    33% {
+        filter:brightness(50%) opacity(50%);
+        top:15px;
+        left:150px;
+        z-index:1;
+    }
+    60% {
+        filter:brightness(50%) opacity(50%);
+        top:15px;
+        left:150px;
+        z-index:1;
+    }
+    66% {
+        filter:brightness(50%) opacity(50%);
+        top:15px;
+        left:-50px;
+        z-index:1;
+    }
+
+    94% {
+        filter:brightness(50%) opacity(50%);
+        top:15px;
+        left:-50px;
+        z-index:1;
+    }
+    100% {
+        filter:brightness(100%) opacity(100%);
+        top:5px;
+        left:50px;
+        z-index:2;
+    }
+
+}
+/*=====================================*/
+
+/*==================testimonials===================*/
+#testimonials {
+    margin-top:2rem;
+}
+#testimonials>p {
     text-align:center;
+
+    font-size:1.5rem;
+    font-weight:600;
+    padding:1.5rem;
 }
-main {
+/*--------------video testimonials-----------------*/
+
+.vid_test {
+    margin: 0 auto;
+    border:var(--col-5) 1px solid;
+    border-radius:8px;
+    padding:1.5rem;
+    width:400px;
+    height:300px;
 
 }
+#video1 {
+    height:100%;
+    width: 100%;
+}
+/*-------------------------------------------------*/
+/*--------------text testimonials-----------------*/
+#text_testimonials {
+    margin:2rem auto 0 auto;
+    position:relative;
+    width:400px;
+    height:250px;
+}
+.txt_test {
+    position:absolute;
+    top:0;
+    left:0;
+    width:400px;
+    height:250px;
+    border:var(--col-5) 1px solid;
+    border-radius:8px;
+    padding:1.5rem;
+}
+#txt_test1 {
+    animation-name:fade_in_out;
+    animation-duration:24s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    animation-delay:0;
+    animation-timing-function: linear;
+}
+#txt_test2 {
+    animation-name:fade_in_out;
+    animation-duration:24s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    animation-delay:-16s;
+    animation-timing-function: linear;
+}
+#txt_test3 {
+    animation-name:fade_in_out;
+    animation-duration:24s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    animation-delay:-8s;
+    animation-timing-function: linear;
+}
+@keyframes fade_in_out {
+    0% {
+        filter:brightness(100%) opacity(100%);
+        z-index:2;
+    }
+    30% {
+        filter:brightness(100%) opacity(100%);
+        z-index:2;
+    }
+    33% {
+        filter:brightness(40%) opacity(40%);
+        z-index:1;
+    }
+    63% {
+        filter:brightness(40%) opacity(40%);
+        z-index:1;
+    }
+    66% {
+        filter:brightness(40%) opacity(40%);
+        z-index:1;
+    }
+    97% {
+        filter:brightness(40%) opacity(40%);
+        z-index:1;
+    }
+    100% {
+        filter:brightness(100%) opacity(100%);
+        z-index:2;
+    }
+}
+.signature {
+    position:absolute;
+    bottom:2rem;
+    right:2rem;
+    font-size:1.5rem;
+    color:var(--col-9);
+}
+/*-------------------------------------------------*/
+/*=====================================*/
 
+
+/*==================order form===================*/
+#order_form {
+    margin-top:2rem;
+}
+/*=====================================*/
+
+
+/*==================footer===================*/
 footer {
     
 }
+
+/*=====================================*/
+
+/*===================product==================*/
+.product {
+
+    width:300px;
+    height:350px;
+    border:var(--col-5) 1px solid;
+    border-radius:8px;
+    padding:15px;
+}
+.prodImg {
+
+}
+.product figcaption {
+    font-family: 'Dancing Script', cursive;
+
+    text-align:center;
+    font-weight:600;
+    font-size:2rem;
+}
+
+/*=====================================*/
+
 
 
 
