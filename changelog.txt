@@ -13,3 +13,10 @@ v0.3
   added placeholder item images
   finished (mobile) header, new items, testimonials
   to do: form, footer
+
+v0.4
+  changed color scheme
+  finished form footer
+  added fading bg
+  added interactivity
+  to do: media queries, images

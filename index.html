@@ -14,9 +14,9 @@
             </div>
 
             <nav id="nav-bar">
-                <a class="nav-link txtcol_dark_acc" href="#new_release">HOT new releases!</a>
-                <a class="nav-link txtcol_dark_acc" href="#testimonial">Customer Testimonials</a>
-                <a class="nav-link txtcol_dark_acc" href="#product1">All Products</a>
+                <a class="nav-link" href="#new_release">HOT new releases!</a>
+                <a class="nav-link" href="#testimonial">Customer Testimonials</a>
+                <a class="nav-link" href="#product1">All Products</a>
             </nav>
         </header>
         
@@ -44,7 +44,8 @@
                 <section id="vid_testimonials">
 
                     <div class="vid_test bgcol_acc" id="vid_test1">
-                        <iframe id="video1" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                        <iframe id="video1" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     
                 </section>
@@ -88,14 +89,17 @@
             <article id="order_form">
                 <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
                     <input type="email" id="email" placeholder="Enter your email address" required>
-                    <figure class = "product bgcol_main" id="prod1">
+                    <figure class = "product purchasables bgcol_main" id="prod1">
                         <img class= "prodImg" id="prod1img" src="./res/img/prodPlacehold.png" alt="sample cupcake red velvet">
+                        <figcaption>Red Velvet</figcaption>
                     </figure>
-                    <figure class = "product bgcol_main" id="prod2">
+                    <figure class = "product purchasables bgcol_main" id="prod2">
                         <img class= "prodImg" id="prod2img" src="./res/img/prodPlacehold.png" alt="sample cake yule log">
+                        <figcaption>Yule Log</figcaption>
                     </figure>
-                    <figure class = "product bgcol_main" id="prod3">
+                    <figure class = "product purchasables bgcol_main" id="prod3">
                         <img class= "prodImg" id="prod3img" src="./res/img/prodPlacehold.png" alt="sample chocolate truffle">
+                        <figcaption>Truffle</figcaption>
                     </figure>
                     <button type="submit" id="submit">Place Order</button>
                 </form>
@@ -105,7 +109,8 @@
 
 
         <footer>
-
+            <a href="#">About The Author</a>
+            <a href="#">Changelog</a>
         </footer>
     </body>
 </html>
