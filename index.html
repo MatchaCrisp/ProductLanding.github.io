@@ -15,93 +15,99 @@
 
             <nav id="nav-bar">
                 <a class="nav-link" href="#new_release">HOT new releases!</a>
-                <a class="nav-link" href="#testimonial">Customer Testimonials</a>
-                <a class="nav-link" href="#product1">All Products</a>
+                <a class="nav-link" href="#testimonials">Customer Testimonials</a>
+                <a class="nav-link" href="#order_form">Order Our Cupcakes</a>
             </nav>
         </header>
         
         <main>
             <article id="new_release">
-                <figure class = "product bgcol_main" id="new_prod1">
-                    <img class= "prodImg" id="prod1img" src="./res/img/prodPlacehold.png" alt="sample cupcake red velvet">
+                <figure class = "newprod product bgcol_main" id="new_prod1">
+                    <img class= "prodImg" id="prod1img" src="./res/img/purple1.jpg" alt="sample cupcake red velvet">
                     <figcaption>Velvet Thunder</figcaption>
 
                 </figure>
-                <figure class = "product bgcol_main" id="new_prod2">
-                    <img class= "prodImg" id="prod2img" src="./res/img/prodPlacehold.png" alt="sample cupcake coffee">
+                <figure class = "newprod product bgcol_main" id="new_prod2">
+                    <img class= "prodImg" id="prod2img" src="./res/img/espresso1.jpg" alt="sample cupcake coffee">
                     <figcaption>Espresso Express</figcaption>
 
                 </figure>
-                <figure class = "product bgcol_main" id="new_prod3">
-                    <img class= "prodImg" id="prod3img" src="./res/img/prodPlacehold.png" alt="sample cupcake chocolate-cheese">
-                    <figcaption>Mascopone Dream</figcaption>
+                <figure class = "newprod product bgcol_main" id="new_prod3">
+                    <img class= "prodImg" id="prod3img" src="./res/img/cheese1.jpg" alt="sample cupcake chocolate-cheese">
+                    <figcaption>Mascarpone Dream</figcaption>
 
                 </figure>
             </article>
 
             <article id="testimonials">
                 <p>See what others have to say about Sweeties!</p>
-                <section id="vid_testimonials">
+                <div id="test_flex_wrap">
+                    <section id="vid_testimonials">
 
-                    <div class="vid_test bgcol_acc" id="vid_test1">
+                        <div class="vid_test bgcol_acc" id="vid_test1">
+                            
+                            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         
-                        <iframe id="video1" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    
-                </section>
-                <section id="text_testimonials">
-                    <div class="txt_test bgcol_main" id="txt_test1">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. 
-                        </p>
-                        <p class="signature">
-                            John Smith1
-                        </p>
-                    </div>
-                    <div class="txt_test bgcol_main" id="txt_test2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. 
-                        </p>
-                        <p class="signature">
-                            John Smith2                            
-                        </p>
-                    </div>
-                    <div class="txt_test bgcol_main" id="txt_test3">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. 
-                        </p>
-                        <p class="signature">
-                            John Smith3
-                        </p>
-                    </div>
-                </section>
+                    </section>
+                    <section id="text_testimonials">
+                        <div class="txt_test bgcol_main" id="txt_test1">
+                            <p>
+                                It's okay. I would give it 8 out of 12 categories
+                                of food satisfaction. While this bakery excels in the flavor balance, 
+                                unfortunately they fall woefully short on mouthfeel. As we all 
+                                know the inside of your cheeks is very sensitive, it's like the inside of 
+                                your thighs except for the tongue. That's why Genevieve and I often begin our lovemaking... 
+                                <a href="https://www.youtube.com/watch?v=GqI7k6AA7LA" target="_blank" class="test_long">(Click here to read the rest)</a>
+                            </p>
+                            <p class="signature">
+                                Charles Boyle
+                            </p>
+                        </div>
+                        <div class="txt_test bgcol_main" id="txt_test2">
+                            <p>
+                                After I bought and ate these cupcakes, my wife kicked her boyfriend out,
+                                the hedgies got screwed, we apes with tendies Diamondhands on a rocket 
+                                to the moon!!
+                            </p>
+                            <p class="signature">
+                                r/wallstreetbets                       
+                            </p>
+                        </div>
+                        <div class="txt_test bgcol_main" id="txt_test3">
+                            <p>
+                                I bought the Hypothetical Themed Cupcake, but never got my order. Instead
+                                I got an email with detailed instructions on how to imagine a cupcake. I don't 
+                                want imaginary cupcakes. This is a scam BEWARE!!!
+                            </p>
+                            <p class="signature">
+                                Bill Ye
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
             </article>
 
             <article id="order_form">
                 <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                    <figure class = "product purchasables bgcol_main" id="prod1">
-                        <img class= "prodImg" id="prod1img" src="./res/img/prodPlacehold.png" alt="sample cupcake red velvet">
-                        <figcaption>Red Velvet</figcaption>
-                    </figure>
-                    <figure class = "product purchasables bgcol_main" id="prod2">
-                        <img class= "prodImg" id="prod2img" src="./res/img/prodPlacehold.png" alt="sample cake yule log">
-                        <figcaption>Yule Log</figcaption>
-                    </figure>
-                    <figure class = "product purchasables bgcol_main" id="prod3">
-                        <img class= "prodImg" id="prod3img" src="./res/img/prodPlacehold.png" alt="sample chocolate truffle">
-                        <figcaption>Truffle</figcaption>
-                    </figure>
-                    <button type="submit" id="submit">Place Order</button>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                    <div id="purchase_items">
+                        <figure class = "product purchasables bgcol_main" id="prod1">
+                            <img class= "prodImg" id="prod1img" src="./res/img/red1.jpg" alt="sample cupcake red velvet">
+                            <figcaption>Red Velvet</figcaption>
+                        </figure>
+                        <figure class = "product purchasables bgcol_main" id="prod2">
+                            <img class= "prodImg" id="prod2img" src="./res/img/peanut1.jpg" alt="sample cake yule log">
+                            <figcaption>Peanut Caramel</figcaption>
+                        </figure>
+                        <figure class = "product purchasables bgcol_main" id="prod3">
+                            <img class= "prodImg" id="prod3img" src="./res/img/lemon1.jpg" alt="sample chocolate truffle">
+                            <figcaption>Lemon Meringue</figcaption>
+                        </figure>
+                    </div>
+
+                    <input type="submit" id="submit" value="Place Order">
                 </form>
             </article>
         </main>
