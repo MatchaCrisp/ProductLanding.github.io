@@ -2,71 +2,121 @@
 <html>
     <head>
         <title>
-            Flareon Support Page
+            Sweeties
         </title>
-        <style>
-            #header {
-                display:block;
-                z-index:10;
-                width:100%;
-                height:100px;
-                background-color:red;
-                position:fixed;
-                top:0;
-                left:0;
-            }
-          #nav-bar {
-            z-index:15
-              ;
-          }
-            main {
-                display:flex;
-                flex-direction:row;
-            }
-
-            @media (max-width: 480px) {
-                main {
-                    display:flex;
-                    flex-direction:column;
-                }
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="res/css/main.css">
     </head>
     <body>
         <header id="header">
-            <h1 class = "title">Support a local Flareon hatchery today!</h1>
-            <img src="#" alt="banner" id="header-img">
+            <h1 id="shop_name">Sweeties</h1>
+            <div id="banner">
+                <img id="header-img" alt="banner background image" src="./res/img/banner.jpg">
+            </div>
+
             <nav id="nav-bar">
-                <a class="nav-link" href="#sign-up">Sign Up</a>
-                <a class="nav-link" href="#vid-test">Hatchery Virtual Tour</a>
-                <a class="nav-link" href="#testimony">Testimony</a>
+                <a class="nav-link" href="#new_release">HOT new releases!</a>
+                <a class="nav-link" href="#testimonials">Customer Testimonials</a>
+                <a class="nav-link" href="#order_form">Order Our Cupcakes</a>
             </nav>
         </header>
+        
         <main>
-            <article id = "sign-up">
-                <p>Sign up here</p>
-                <form id="form" action = "https://www.freecodecamp.com/email-submit" method = "POST">
-                    <label for="email">Please enter your email here</label>
-                    <input type="email" id="email" name="email" placeholder="johncena@invisible.com">
-                    <br>
-                    <input type="submit" id="submit">
-                </form>
-            </article>
-            <article id = "vid-test">
-                <p>virtual tour of hatchery</p>
-                <iframe width="534" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <video src="#" id = "video"></video>
-            </article>
-            <article id = "testimony">
-                <p>testimony</p>
+            <article id="new_release">
+                <figure class = "newprod product bgcol_main" id="new_prod1">
+                    <img class= "prodImg" id="prod1img" src="./res/img/purple1.jpg" alt="sample cupcake red velvet">
+                    <figcaption>Velvet Thunder</figcaption>
 
+                </figure>
+                <figure class = "newprod product bgcol_main" id="new_prod2">
+                    <img class= "prodImg" id="prod2img" src="./res/img/espresso1.jpg" alt="sample cupcake coffee">
+                    <figcaption>Espresso Express</figcaption>
+
+                </figure>
+                <figure class = "newprod product bgcol_main" id="new_prod3">
+                    <img class= "prodImg" id="prod3img" src="./res/img/cheese1.jpg" alt="sample cupcake chocolate-cheese">
+                    <figcaption>Mascarpone Dream</figcaption>
+
+                </figure>
+            </article>
+
+            <article id="testimonials">
+                <p>See what others have to say about Sweeties!</p>
+                <div id="test_flex_wrap">
+                    <section id="vid_testimonials">
+
+                        <div class="vid_test bgcol_acc" id="vid_test1">
+                            
+                            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                    </section>
+                    <section id="text_testimonials">
+                        <div class="txt_test bgcol_main" id="txt_test1">
+                            <p>
+                                It's okay. I would give it 8 out of 12 categories
+                                of food satisfaction. While this bakery excels in the flavor balance, 
+                                unfortunately they fall woefully short on mouthfeel. As we all 
+                                know the inside of your cheeks is very sensitive, it's like the inside of 
+                                your thighs except for the tongue. That's why Genevieve and I often begin our lovemaking... 
+                                <a href="https://www.youtube.com/watch?v=GqI7k6AA7LA" target="_blank" class="test_long">(Click here to read the rest)</a>
+                            </p>
+                            <p class="signature">
+                                Charles Boyle
+                            </p>
+                        </div>
+                        <div class="txt_test bgcol_main" id="txt_test2">
+                            <p>
+                                After I bought and ate these cupcakes, my wife kicked her boyfriend out,
+                                the hedgies got screwed, we apes with tendies Diamondhands on a rocket 
+                                to the moon!!
+                            </p>
+                            <p class="signature">
+                                r/wallstreetbets                       
+                            </p>
+                        </div>
+                        <div class="txt_test bgcol_main" id="txt_test3">
+                            <p>
+                                I bought the Hypothetical Themed Cupcake, but never got my order. Instead
+                                I got an email with detailed instructions on how to imagine a cupcake. I don't 
+                                want imaginary cupcakes. This is a scam BEWARE!!!
+                            </p>
+                            <p class="signature">
+                                Bill Ye
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+
+            <article id="order_form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                    <div id="purchase_items">
+                        <figure class = "product purchasables bgcol_main" id="prod1">
+                            <img class= "prodImg" id="prod1img" src="./res/img/red1.jpg" alt="sample cupcake red velvet">
+                            <figcaption>Red Velvet</figcaption>
+                        </figure>
+                        <figure class = "product purchasables bgcol_main" id="prod2">
+                            <img class= "prodImg" id="prod2img" src="./res/img/peanut1.jpg" alt="sample cake yule log">
+                            <figcaption>Peanut Caramel</figcaption>
+                        </figure>
+                        <figure class = "product purchasables bgcol_main" id="prod3">
+                            <img class= "prodImg" id="prod3img" src="./res/img/lemon1.jpg" alt="sample chocolate truffle">
+                            <figcaption>Lemon Meringue</figcaption>
+                        </figure>
+                    </div>
+
+                    <input type="submit" id="submit" value="Place Order">
+                </form>
             </article>
         </main>
         
 
 
         <footer>
-
+            <a href="#">About The Author</a>
+            <a href="#">Changelog</a>
         </footer>
     </body>
 </html>
