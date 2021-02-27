@@ -31,7 +31,7 @@ body {
     background-color:var(--col-4);
 }
 main {
-    background-image:url(../img/bakery.jpg);
+    background-image:url(https://raw.githubusercontent.com/MatchaCrisp/ProductLanding.github.io/main/res/img/bakery.jpg);
     background-size:2016px 560px;
     background-repeat:no-repeat;
     overflow:hidden;
@@ -44,7 +44,7 @@ footer::before {
     bottom:0px;
     left:0px;
     z-index:-1;
-    background-image:url(../img/bakery.jpg);
+    background-image:url(https://raw.githubusercontent.com/MatchaCrisp/ProductLanding.github.io/main/res/img/bakery.jpg);
     transform:scaleY(-1);
     background-size:2016px 560px;
     background-repeat:no-repeat;
