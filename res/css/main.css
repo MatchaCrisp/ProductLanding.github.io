@@ -32,7 +32,7 @@ body {
 }
 main {
     background-image:url(https://raw.githubusercontent.com/MatchaCrisp/ProductLanding.github.io/main/res/img/bakery.jpg);
-    background-size:2016px 560px;
+    background-size:4032px 560px;
     background-repeat:no-repeat;
     overflow:hidden;
 }
@@ -46,7 +46,7 @@ footer::before {
     z-index:-1;
     background-image:url(https://raw.githubusercontent.com/MatchaCrisp/ProductLanding.github.io/main/res/img/bakery.jpg);
     transform:scaleY(-1);
-    background-size:2016px 560px;
+    background-size:4032px 560px;
     background-repeat:no-repeat;
     overflow:hidden;
 }
@@ -522,11 +522,24 @@ footer a:hover {
         animation:none;
         position:relative;
         margin-top:1rem;
+        cursor:pointer;
     }
     #purchase_items {
         display:flex;
         flex-flow:row wrap;
         justify-content: space-evenly;
+    }
+    .newprod:hover{
+        bottom:0.25rem;
+        right:0.25rem;
+        box-shadow: 2px 2px 0.25rem var(--col-5);
+    }
+    
+    .newprod:active {
+        bottom:0;
+        right:0;
+        box-shadow:none;
+        background-color:var(--col-3);
     }
 }
 
