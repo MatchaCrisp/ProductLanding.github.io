@@ -32,6 +32,7 @@ body {
 }
 main {
     background-image:url(https://raw.githubusercontent.com/MatchaCrisp/ProductLanding.github.io/main/res/img/bakery.jpg);
+
     background-size:4032px 560px;
     background-repeat:no-repeat;
     overflow:hidden;
@@ -92,7 +93,7 @@ footer::before {
 /*=================header====================*/
 
 header {
-    position:fixed;
+    position:relative;
     top:0;
     left:0;
     width:100%;
@@ -410,6 +411,10 @@ nav a:active {
 }
 
 #submit {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width:200px;
     display:block;
     padding:0.3rem 1rem;
     border:var(--col-5) 1px solid;
