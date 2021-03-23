@@ -89,6 +89,14 @@ footer::before {
 .txtcol_dark_acc {
     color:var(--col-9);
 }
+
+h2 {
+    text-align:center;
+
+    font-size:1.5rem;
+    font-weight:600;
+    padding:1.5rem;
+}
 /*=====================================*/
 /*=================header====================*/
 
@@ -176,7 +184,7 @@ nav a:active {
     margin:12rem auto 0 auto;
     overflow:hidden;
     width:400px;
-    height:370px;
+    height:470px;
 }
 #new_prod1 {
     position:absolute;
@@ -211,44 +219,44 @@ nav a:active {
 @keyframes carousel {
     0% {
         filter:brightness(100%) opacity(100%);
-        top:5px;
+        top:105px;
         left:50px;
         z-index:2;
     }
     27% {
         filter:brightness(100%) opacity(100%);
-        top:5px;
+        top:105px;
         left:50px;
         z-index:2;
     }
     33% {
         filter:brightness(50%) opacity(50%);
-        top:15px;
+        top:115px;
         left:150px;
         z-index:1;
     }
     60% {
         filter:brightness(50%) opacity(50%);
-        top:15px;
+        top:115px;
         left:150px;
         z-index:1;
     }
     66% {
         filter:brightness(50%) opacity(50%);
-        top:15px;
+        top:115px;
         left:-50px;
         z-index:1;
     }
 
     94% {
         filter:brightness(50%) opacity(50%);
-        top:15px;
+        top:115px;
         left:-50px;
         z-index:1;
     }
     100% {
         filter:brightness(100%) opacity(100%);
-        top:5px;
+        top:105px;
         left:50px;
         z-index:2;
     }
@@ -260,13 +268,7 @@ nav a:active {
 #testimonials {
     margin-top:2rem;
 }
-#testimonials>p {
-    text-align:center;
 
-    font-size:1.5rem;
-    font-weight:600;
-    padding:1.5rem;
-}
 /*--------------video testimonials-----------------*/
 
 .vid_test {
@@ -518,11 +520,13 @@ footer a:hover {
     #new_release {
         width:initial;
         height:initial;
+
+    }
+    #new_flex_wrap {
         display:flex;
         flex-flow:row wrap;
         justify-content: space-evenly;
     }
-
     #new_prod1,#new_prod2,#new_prod3 {
         animation:none;
         position:relative;
