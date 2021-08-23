@@ -1,5 +1,9 @@
 # ProductLanding.github.io
 
+## Introduction
+This is a pure HTML5/CSS3 one page website built for FCC Responsive Design certification #4: Product Landing Page.
+
+## Requirements
 HTML
 =======
 User Story #1: My product landing page should have a header element with a corresponding id="header".

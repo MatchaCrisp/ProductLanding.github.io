@@ -20,3 +20,10 @@ v0.4
   added fading bg
   added interactivity
   to do: media queries, images
+
+v1.1
+  finished images
+  finished media queries
+  comment
+  clean up
+  update links
